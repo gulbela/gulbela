@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gulbela Luxury Perfume | Alam Enterprises</title>
+
+    <meta name="description" content="Gulbela Luxury Perfume by Alam Enterprises. Premium Roll On Attar Collection with Long Lasting Fragrance.">
+    <meta name="keywords" content="Gulbela, Luxury Perfume, Attar, Roll On, Alam Enterprises, Rose, Mogra, Kesar Chandan">
+    <meta name="author" content="Alam Enterprises">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f8f7f4;
+    color:#222;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    width:100%;
+    background:#ffffff;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:999;
+    box-shadow:0 4px 20px rgba(0,0,0,.08);
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width:60px;
+    height:60px;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+.logo h2{
+    color:#8b6508;
+    font-size:24px;
+}
+
+.logo span{
+    display:block;
+    font-size:13px;
+    color:#666;
+    font-weight:500;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:28px;
+}
+
+nav ul li a{
+    color:#333;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#b8860b;
+}
+
+.hero{
+    padding-top:120px;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(to right,#fff8eb,#fff);
+}
+
+.hero-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:60px;
+}
+
+.hero-text h1{
+    font-size:55px;
+    color:#6f4d02;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:18px;
+    color:#555;
+    margin-bottom:30px;
+    line-height:1.8;
+}
+
+.btn{
+    display:inline-block;
+    background:#b8860b;
+    color:#fff;
+    padding:15px 32px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#6f4d02;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:25px;
+    box-shadow:0 20px 50px rgba(0,0,0,.18);
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:#6f4d02;
+}
+
+.section-title p{
+    margin-top:10px;
+    color:#666;
+}
+
+.products{
+    padding:90px 0;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:25px;
+}
+
+.card-content h3{
+    color:#7b5605;
+    margin-bottom:10px;
+}
+
+.card-content p{
+    color:#555;
+    line-height:1.7;
+}
+
+.gallery{
+    background:#fff;
+    padding:90px 0;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.gallery-grid img{
+    border-radius:18px;
+    height:320px;
+    width:100%;
+    object-fit:cover;
+    transition:.4s;
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.03);
+}
+
+.combo{
+    padding:90px 0;
+    background:#faf3df;
+}
+
+.combo-area{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.combo-image img{
+    border-radius:22px;
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+.combo-text h2{
+    color:#6f4d02;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.combo-text p{
+    color:#555;
+    line-height:1.9;
+    margin-bottom:25px;
+}.about{
+    padding:90px 0;
+    background:#ffffff;
+}
+
+.about-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about-image img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.about-text h2{
+    font-size:42px;
+    color:#6f4d02;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    color:#555;
+    line-height:1.9;
+    margin-bottom:18px;
+}
+
+.contact{
+    padding:90px 0;
+    background:#faf7ef;
+}
+
+.contact-box{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.contact-info{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.contact-info h3{
+    color:#6f4d02;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    margin-bottom:15px;
+    color:#555;
+    line-height:1.8;
+}
+
+.contact-form{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:18px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+}
+
+.contact-form textarea{
+    resize:none;
+    height:140px;
+}
+
+.contact-form button{
+    background:#b8860b;
+    color:#fff;
+    border:none;
+    padding:15px 35px;
+    border-radius:40px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+}
+
+.contact-form button:hover{
+    background:#6f4d02;
+}
+
+footer{
+    background:#3d2b00;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    z-index:999;
+}
+
+@media(max-width:992px){
+
+.hero-content,
+.combo-area,
+.about-content,
+.contact-box{
+    grid-template-columns:1fr;
+}
+
+.hero-text{
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:40px;
+}
+
+.section-title h2{
+    font-size:34px;
+}
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:15px;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero-text h1{
+    font-size:32px;
+}
+
+.logo h2{
+    font-size:20px;
+}
+
+.section-title h2{
+    font-size:28px;
+}
+
+.card img{
+    height:220px;
+}
+
+.gallery-grid img{
+    height:240px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<div class="logo">
+<img src="assets/logo.jpeg" alt="Gulbela Logo">
+<div>
+<h2>Gulbela</h2>
+<span>Luxury Perfume</span>
+</div>
+</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#products">Products</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#combo">Combo Pack</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<div class="hero-content">
+
+<div class="hero-text">
+
+<h1>Premium Luxury Perfume Collection</h1>
+
+<p>
+Welcome to Gulbela Luxury Perfume by Alam Enterprises.
+Experience premium quality long lasting fragrances crafted
+for everyday elegance and special occasions.
+</p>
+
+<a href="#products" class="btn">Explore Products</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="images/Banner.jpeg" alt="Products">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="products" id="products">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Our Products</h2>
+
+<p>Premium Attar & Luxury Perfume Collection</p>
+
+</div>
+
+<div class="product-grid">
+
+<div class="card">
+
+<img src="images/Rose (Gulab).jpeg" alt="Luxury Perfume">
+
+<div class="card-content">
+
+<h3>Rose (Gulab)</h3>
+
+<p>
+Premium long lasting fragrance with elegant packaging,
+crafted for men and women.
+</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/kesar Chandan.jpeg" alt="Kesar Chandan">
+
+<div class="card-content">
+
+<h3>Kesar Chandan</h3>
+
+<p>
+Rich traditional aroma with premium quality ingredients
+for a royal fragrance experience.
+</p>
+
+</div>
+
+</div>
+<div class="card">
+<img src="images/Mogra (Bela).jpeg" alt="Mogra (Bela)">
+<div class="card-content">
+<h3>Mogra (Bela)</h3>
+<p>
+Sweet floral fragrance with a fresh and elegant aroma,
+perfect for daily use.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/Jannat-Ul-Firdaus.jpeg" alt="Jannat-ul-Firdaus">
+<div class="card-content">
+<h3>Jannat-ul-Firdaus</h3>
+<p>
+A rich and traditional fragrance with a deep,
+long lasting and luxurious aroma.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/Fulwari.jpeg" alt="Fulwari">
+<div class="card-content">
+<h3>Fulwari</h3>
+<p>
+A beautiful floral fragrance with a soft and refreshing aroma,
+perfect for everyday use.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/Black Ghost.jpeg" alt="Black Ghost">
+<div class="card-content">
+<h3>Black Ghost</h3>
+<p>
+A bold and mysterious fragrance with a rich,
+long lasting premium aroma.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="images/White Oud.jpeg" alt="White Oud">
+<div class="card-content">
+<h3>White Oud</h3>
+<p>
+A smooth and luxurious oud fragrance with an elegant,
+long lasting premium aroma.
+</p>
+</div>
+</div>
+<div class="card">
+
+<img src="assets/combo1.jpeg" alt="Combo Pack">
+
+<div class="card-content">
+
+<h3>Combo Pack</h3>
+
+<p>
+A premium combination of Gulbela Luxury Perfumes, perfect
+for gifting and daily use with long lasting fragrance.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="gallery" id="gallery">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Gallery</h2>
+
+<p>Explore Our Premium Collection</p>
+
+</div>
+
+<div class="gallery-grid">
+
+<img src="assets/gallery.jpeg" alt="Gallery">
+
+<img src="assets/products.jpeg" alt="Products">
+
+<img src="images/kesar Chandan.jpeg" alt="Kesar Chandan">
+
+</div>
+
+</div>
+
+</section>
+
+<section class="combo" id="combo">
+
+<div class="container">
+
+<div class="combo-area">
+
+<div class="combo-image">
+
+<img src="assets/combo1.jpeg" alt="Combo Pack">
+
+</div>
+
+<div class="combo-text">
+
+<h2>Luxury Combo Pack</h2>
+
+<p>
+Our exclusive combo packs are specially designed for perfume
+lovers who enjoy multiple premium fragrances in one elegant
+collection.
+</p>
+
+<p>
+Suitable for gifting, festivals, family occasions and daily
+use with premium long lasting fragrance.
+</p>
+
+<a href="#contact" class="btn">Order Now</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<div class="container">
+
+<div class="about-content">
+
+<div class="about-image">
+
+<img src="assets/logo.jpeg" alt="About Gulbela">
+
+</div>
+
+<div class="about-text">
+
+<h2>About Alam Enterprises</h2>
+
+<p>
+Alam Enterprises proudly presents Gulbela Luxury Perfume,
+offering premium quality fragrances with elegant packaging,
+excellent performance and customer satisfaction.
+</p>
+
+<p>
+Our vision is to provide luxurious fragrances at affordable
+prices while maintaining premium quality standards.
+</p>
+
+<p>
+Every Gulbela perfume is carefully selected to deliver a
+rich, refreshing and long lasting fragrance experience.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Contact Us</h2>
+
+<p>We would love to hear from you.</p>
+
+</div>
+
+<div class="contact-box">
+
+<div class="contact-info">
+
+<h3>Alam Enterprises</h3>
+
+<p><strong>Brand:</strong> Gulbela Luxury Perfume</p>
+
+<p><strong>Email:</strong> gulbelaperfume@gmail.com</p>
+
+<p><strong>Phone:</strong> +91-9415154786</p>
+
+<p><strong>Address:</strong> Saurikh, Kannauj, Uttar Pradesh, 209728 India</p>
+
+<p>
+For wholesale, dealership, online orders and business
+enquiries, please contact us anytime.
+</p>
+
+</div>
+
+<div class="contact-form">
+
+<form id="whatsappForm">
+
+<input
+type="text"
+placeholder="Your Name"
+required
+>
+
+<input
+type="email"
+placeholder="Your Email"
+required
+>
+
+<input
+type="text"
+placeholder="Subject"
+required
+>
+
+<textarea
+placeholder="Your Message"
+required
+></textarea>
+
+<button type="submit">
+Send Message
+</button>
+
+</form>
+<script>
+document.getElementById("whatsappForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    var name = this.querySelector('input[placeholder="Your Name"]').value;
+    var email = this.querySelector('input[placeholder="Your Email"]').value;
+    var subject = this.querySelector('input[placeholder="Subject"]').value;
+    var message = this.querySelector('textarea[placeholder="Your Message"]').value;
+
+    var text = "New Website Enquiry%0A%0A" +
+               "Name: " + encodeURIComponent(name) + "%0A" +
+               "Email: " + encodeURIComponent(email) + "%0A" +
+               "Subject: " + encodeURIComponent(subject) + "%0A" +
+               "Message: " + encodeURIComponent(message);
+
+    window.open("https://wa.me/919415154786?text=" + text, "_blank");
+});
+</script>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Alam Enterprises | Gulbela Luxury Perfume |
+All Rights Reserved.
+</p>
+
+</footer>
+
+<a href="https://wa.me/919415154786?text=Welcome%20to%20Gulbela%20Luxury%20Perfume.%20I%20want%20to%20know%20more%20about%20your%20products." target="_blank" style="position:fixed;right:25px;bottom:25px;z-index:99999;">
+<img src="images/whatsapp.jpeg" alt="WhatsApp" style="width:60px;height:60px;border-radius:50%;">
+</a>
+
+</body>
+</html>
