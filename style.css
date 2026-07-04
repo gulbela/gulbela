@@ -1289,4 +1289,8 @@ END OF FILE
     height: 60px;
     display: block;
     border-radius: 50%;
+}@media (max-width: 768px) {
+  .hero {
+    padding-top: 70px;
+  }
 }
