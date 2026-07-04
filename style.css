@@ -1289,7 +1289,8 @@ END OF FILE
     height: 60px;
     display: block;
     border-radius: 50%;
-}@media (max-width: 768px) {
+}
+@media (max-width: 768px) {
   header {
     position: relative !important;
     top: auto !important;
@@ -1297,5 +1298,12 @@ END OF FILE
 
   .hero {
     padding-top: 30px !important;
+  }
+
+  .hero-text h1 {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    position: relative !important;
+    z-index: 5 !important;
   }
 }
